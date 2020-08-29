@@ -1,5 +1,4 @@
 # API Rede Social
-
 ## Desenvolvimento de aplicação Rede Social
 <!--ts-->
     * Aplicação permiti criar postagem e receber comentários.
