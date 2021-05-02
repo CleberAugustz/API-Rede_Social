@@ -28,10 +28,13 @@
       * Abrir o terminal - Apertar a tecla windows+R
         * Digitar cmd e executar
         * Abrirá o prompt de Comando
-        * digitar "cd .." sem as aspas, e dar enter, repetir o processo até chegar na raiz principal, que no caso será a partição principal (C:).
-        * digitar "cd Projeto" depois "cd server".
-        * Após chegar a pasta server, digitar "node server.js" sem as aspas.
-        * A API iniciará
+        * Navegar até a pasta do projeto através do comando cd.
+        * Após acessar a pasta SERVER, instalar as dependências através do comando yarn ou npm -i.
+        * Ao encerrar a instalação das dependências, é necessário transpilar o código typescript para javascript.
+        * Execute o comando yarn build ou npm run build. Esses comandos irão buildar o projeto e será gerada a pasta DIST.
+        * DIST irá conter tods os arquivos do projeto transpilado em JS.
+        * Ao encerrar a etapa de build, será possível rodar o back-end (API) com comando node dist/server.js.
+        * A mensagem de start irá aparecer no log "Server Started on Port 3333!".
 
 
   * Abrir o Windows Explorer novamente e ir até a pasta Projeto
@@ -52,7 +55,7 @@
 
 ## Observações
 <!--ts-->
-    * A aplicação foi desenvolvida sem utilização de banco de dados, portanto os registros gerados são temporário, enquanto a aplicação estiver rodando os mesmos estarão armazenados, quando finalizada a aplicação, todas os dados serão perdidos.
+    * A aplicação foi desenvolvida sem utilização de banco de dados, portanto, os registros gerados são armazenados temporariamente, assim, enquanto a aplicação estiver online os mesmos serão persistidos e ao finalizr aplicação os dados serão perdidos.
 <!--te-->
 
 
